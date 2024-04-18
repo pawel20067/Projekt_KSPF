@@ -5,6 +5,7 @@ public class Main {
 		System.out.println("Czesc chlopaki");
 		System.out.println("Czesc chlopaku");
 		System.out.println("test test test");
+		System.out.println("Elo ELo");
 	}
 
 }
