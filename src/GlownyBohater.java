@@ -13,6 +13,14 @@ public class GlownyBohater extends Postac{
 			this.reputacja_Sluzb=reputacja_Sluzb;
 	}
 	
+	public float getStan_konta() {
+		return stan_konta;
+	}
+
+	public void setStan_konta(float stan_konta) {
+		this.stan_konta = stan_konta;
+	}
+
 	public void interfejs() {
 		System.out.println("------------------------Statystyki Bohatera---------------------------");
 		System.out.println("Stan Konta: " + stan_konta + "zł");

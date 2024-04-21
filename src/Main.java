@@ -26,8 +26,14 @@ public class Main {
         swiat[7].dodajPrzejscie(null, swiat[6], swiat[8], null);
         swiat[8].dodajPrzejscie(swiat[7], null, null, swiat[9]);
         swiat[9].dodajPrzejscie(null, swiat[8], null, null);
-
+        
+        //Postacie
         GlownyBohater G1 = new GlownyBohater("Stanisław", "Wawrzyniak", "Polak", 82, 10, 200, 0, 100);
+        
+        //Pojazd
+        Pojazd SamochodPierwszy = new Pojazd("Lincoln", "Navigator", 400000, 60, 80, 1997, 113);
+        
+        
 
         Lokacje aktualneMiejsce = swiat[0];
         Scanner scan = new Scanner(System.in);
