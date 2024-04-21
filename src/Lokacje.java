@@ -8,29 +8,29 @@ class Lokacje {
     }
 
     public String wypiszPrzejscia() {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder pomoc = new StringBuilder();
         for (int i = 0; i < przejscia.length; i++) {
             if (przejscia[i] != null) {
-                if (builder.length() > 0) {
-                    builder.append(", ");
+                if (pomoc.length() > 0) {
+                	pomoc.append(", ");
                 }
                 switch(i) {
                     case 0:
-                        builder.append("N (" + przejscia[i].getNazwa() + ")");
+                    	pomoc.append("N (" + przejscia[i].getNazwa() + ")");
                         break;
                     case 1:
-                        builder.append("S (" + przejscia[i].getNazwa() + ")");
+                    	pomoc.append("S (" + przejscia[i].getNazwa() + ")");
                         break;
                     case 2:
-                        builder.append("E (" + przejscia[i].getNazwa() + ")");
+                    	pomoc.append("E (" + przejscia[i].getNazwa() + ")");
                         break;
                     case 3:
-                        builder.append("W (" + przejscia[i].getNazwa() + ")");
+                    	pomoc.append("W (" + przejscia[i].getNazwa() + ")");
                         break;
                 }
             }
         }
-        return builder.toString();
+        return pomoc.toString();
     }
 
     public String getNazwa() {

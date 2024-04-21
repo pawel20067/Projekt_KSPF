@@ -26,6 +26,8 @@ public class Main {
         swiat[7].dodajPrzejscie(null, swiat[6], swiat[8], null);
         swiat[8].dodajPrzejscie(swiat[7], null, null, swiat[9]);
         swiat[9].dodajPrzejscie(null, swiat[8], null, null);
+        
+        GlownyBohater G1 = new GlownyBohater("Stanisław", "Wawrzyniak", "Polak", 82, 10, 0, 28);
 
         Lokacje aktualneMiejsce = swiat[0];
         Scanner scan = new Scanner(System.in);
@@ -33,6 +35,7 @@ public class Main {
         int wygrana = 0;
 
         while (wygrana!=1) {
+        	G1.interfejs();
             System.out.println("Znajdujesz się w " + aktualneMiejsce.getNazwa());
             System.out.println("Możesz pojechać do:");
             System.out.println("");
