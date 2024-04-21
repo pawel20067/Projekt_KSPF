@@ -1,11 +1,11 @@
 
 public class GlownyBohater extends Postac{
 	protected int stres;
-	protected int stan_konta;
+	protected float stan_konta;
 	protected int reputacja_Kartel;
 	protected int reputacja_Sluzb;
 	
-	public GlownyBohater(String imie, String naziwsko, String narodowosc, int wiek, int stres, int stan_konta, int reputacja_Kartel, int reputacja_Sluzb) {
+	public GlownyBohater(String imie, String naziwsko, String narodowosc, int wiek, int stres, float stan_konta, int reputacja_Kartel, int reputacja_Sluzb) {
 		super(imie, naziwsko, narodowosc, wiek);
 			this.stres=stres;
 			this.stan_konta=stan_konta;
