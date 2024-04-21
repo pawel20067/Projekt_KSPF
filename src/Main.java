@@ -33,6 +33,17 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         
         int wygrana = 0;
+        
+        System.out.println("* Wcielasz się w rolę Stanisława Wawrzyniaka."
+        		+ "\n" + "* To 82 letni mężczyzna, który nie ma grosza przy duszy, jest sam jak palec i grozi mu zajęcie przez bank zadłużonego biznesu. "
+        		+ "\n" + "* W przeszłości był ogrodnikiem poświęcił całe życie na chybrydyzację coraz to nowych ras kwaiatów jednak z czasem jego biznes odszedł w niepamięć."
+        		+ "\n" + "* Postanawia udać się do swojej rodziny którą zaniedbał przez swoje hobby i prace."
+        		+ "\n" + "* Nie został dobrze przyjęty przez swoją żonę oraz córkę."
+        		+ "\n" + "* Mężczyzna który słyszał kłotnię wręcza mu ulotkę z adresem gdzie ma się udać aby odrobić i odpłacić krzywdy które wyrządził swojej rodzinie."
+        		+ "\n" + "* Właśnie wtedy otrzymuje ofertę pracy, która wymaga od niego jedynie jazdy samochodem. "
+        		+ "\n" + "* W ten prosty sposób Stanisław staje się kurierem na usługach Katowickiego kartelu. "
+        		+ "\n" + "* Nie wiadomo jednak, czy zdąży je naprawić swoje błędy, zanim dobiorą się do niego organy ochrony porządku publicznego lub egzekutorzy kartelu."
+        		+ "");
 
         while (wygrana!=1) {
         	G1.interfejs();
