@@ -27,7 +27,7 @@ public class Main {
         swiat[8].dodajPrzejscie(swiat[7], null, null, swiat[9]);
         swiat[9].dodajPrzejscie(null, swiat[8], null, null);
         
-        GlownyBohater G1 = new GlownyBohater("Stanisław", "Wawrzyniak", "Polak", 82, 10, 0, 28);
+        GlownyBohater G1 = new GlownyBohater("Stanisław", "Wawrzyniak", "Polak", 82, 10, 0, 0, 100);
 
         Lokacje aktualneMiejsce = swiat[0];
         Scanner scan = new Scanner(System.in);
@@ -44,6 +44,9 @@ public class Main {
         		+ "\n" + "* W ten prosty sposób Stanisław staje się kurierem na usługach Katowickiego kartelu. "
         		+ "\n" + "* Nie wiadomo jednak, czy zdąży je naprawić swoje błędy, zanim dobiorą się do niego organy ochrony porządku publicznego lub egzekutorzy kartelu."
         		+ "");
+        System.out.println("");
+        
+        
 
         while (wygrana!=1) {
         	G1.interfejs();
