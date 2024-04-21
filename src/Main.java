@@ -70,14 +70,14 @@ public class Main {
                     System.out.println("Zakończono podróż.");
                     return;
                 default:
-                    System.out.println("Nie możesz się tam wybrać. Wybierz dośtępną opcje.");
+                    System.out.println("Nie możesz się tam wybrać. Wybierz dostępną opcje.");
                     continue;
             }
 
             if (noweMiejsce != null) {
                 aktualneMiejsce = noweMiejsce;
             } else {
-                System.out.println("Nie możesz się tam wybrać. Wybierz dośtępną opcje.");
+                System.out.println("Nie możesz się tam wybrać. Wybierz dostępną opcje.");
             }
         }
     }
