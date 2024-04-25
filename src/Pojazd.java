@@ -7,9 +7,9 @@ public abstract class Pojazd {
 	protected int paliwo;
 	protected int rocznik;
 	protected int zbiornik;
-	protected float spalanie;
+	protected float spalanieNa100Km;
 	
-	public Pojazd(String marka, String model, int przebieg, int paliwo, int rocznik, int zbiornik, float spalanie) {
+	public Pojazd(String marka, String model, int przebieg, int paliwo, int rocznik, int zbiornik, float spalanieNa100Km) {
 		super();
 		this.marka = marka;
 		this.model = model;
@@ -17,7 +17,7 @@ public abstract class Pojazd {
 		this.paliwo=paliwo;
 		this.rocznik=rocznik;
 		this.zbiornik=zbiornik;
-		this.spalanie=spalanie;
+		this.spalanieNa100Km=spalanieNa100Km;
 	}
 	
 	public void informacje() {
@@ -25,6 +25,7 @@ public abstract class Pojazd {
 		System.out.println(marka + " " + model + " " + rocznik);
 		System.out.println("Przebieg: " + przebieg);
 		System.out.println("Ilość paliwa: " + paliwo + "%");
+		System.out.println("----------------------------------------------------------------------------------");
 	}
 	
 	public int getPrzebieg() {
@@ -64,5 +65,10 @@ public abstract class Pojazd {
 				System.out.println("Za dużo zatankuj mniej!!!");
 	        }
 		}
-	}*/	
+	}*/
+	
+    public void zwiekszPrzebieg(int dodatkowyPrzebieg) {
+        this.przebieg += dodatkowyPrzebieg;
+    }
+
 }
