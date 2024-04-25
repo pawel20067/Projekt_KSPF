@@ -1,8 +1,16 @@
+
 import java.util.Scanner;
+
+import paczki.*;
+
 
 public class Main {
     public static void main(String[] args) {
-        Lokacje[] swiat = new Lokacje[25];
+    	
+    	
+    	/*Narkotyk n1 = new Narkotyk(5, "Adam", "Skalite", 500000, 3, "Klefendron");
+    	System.out.println(n1.opisZawartosci()); */
+    	Lokacje[] swiat = new Lokacje[25];
         swiat[0] = new Lokacje("Polska: Klucze");
         swiat[1] = new Lokacje("Polska: Katowice");
         swiat[2] = new Lokacje("Słowacja: Skalite");
@@ -85,6 +93,6 @@ public class Main {
         } else {
             System.out.println("Nie możesz się tam wybrać. Wybierz dostępną opcję.");
             return aktualneMiejsce;
-        }
+        } 
     }
 }
