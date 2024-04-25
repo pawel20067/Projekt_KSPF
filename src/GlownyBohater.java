@@ -22,11 +22,13 @@ public class GlownyBohater extends Postac{
 	}
 
 	public void interfejs() {
+		System.out.println("------------------------Statystyki Bohatera---------------------------");
 		System.out.println("\u001B31;1m------------------------------Statystyki Bohatera---------------------------------");
 		System.out.println("Stan Konta: " + stan_konta + "zł");
 		System.out.println("Poziom stresu: " + stres + "%");
 		System.out.println("Poziom reputacji w oczach kartelu: " + reputacja_Kartel + "%");
 		System.out.println("Poziom reputacji w oczach slużb mundurowych: " + reputacja_Sluzb + "%");
+		System.out.println("----------------------------------------------------------------------");
 		System.out.println("----------------------------------------------------------------------------------");
 	}
 }
