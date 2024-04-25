@@ -1,20 +1,18 @@
 import java.util.Scanner;
 
-public class Pojazd {
+public abstract class Pojazd {
 	protected String marka;
 	protected String model;
 	protected int przebieg;
-	protected int sprawnosc;
 	protected int paliwo;
 	protected int rocznik;
 	protected int zbiornik;
 	
-	public Pojazd(String marka, String model, int przebieg, int sprawnosc, int paliwo, int rocznik, int zbiornik) {
+	public Pojazd(String marka, String model, int przebieg, int paliwo, int rocznik, int zbiornik) {
 		super();
 		this.marka = marka;
 		this.model = model;
 		this.przebieg = przebieg;
-		this.sprawnosc = sprawnosc;
 		this.paliwo=paliwo;
 		this.rocznik=rocznik;
 		this.zbiornik=zbiornik;
@@ -23,10 +21,17 @@ public class Pojazd {
 	public void informacje() {
 		System.out.println(marka + " " + model + " " + rocznik);
 		System.out.println("Przebieg: " + przebieg);
-		System.out.println("Sprawność: " + sprawnosc);
 		System.out.println("Ilość paliwa: " + paliwo + "%");
 	}
 	
+	public int getPrzebieg() {
+		return przebieg;
+	}
+
+	public void setPrzebieg(int przebieg) {
+		this.przebieg = przebieg;
+	}
+
 	public void zatankuj() {
 		float cenaBenzyny = 6.71F;
 		int litry = zbiornik*(paliwo/100);
