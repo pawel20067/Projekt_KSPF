@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Main {
         GlownyBohater G1 = new GlownyBohater("Stanisław", "Wawrzyniak", "Polak", 82, 10, 200, 0, 100);
         
         //Pojazd
-        Pojazd SamochodPierwszy = new Pojazd("Lincoln", "Navigator", 400000, 60, 80, 1997, 113);
+        Pojazd samochodPierwszy = new Samochod("Lincoln", "Navigator", 400000, 80, 1997, 113, 25, "prywatny", 20, 1.42F);
         
         
 
@@ -55,6 +56,7 @@ public class Main {
 
         while (wygrana != 1) {
             wygrana = ruch(aktualneMiejsce, G1);
+            samochodPierwszy.informacje();
         }
     }
     
@@ -136,6 +138,8 @@ public class Main {
 
         System.out.print("Wpisz kierunek geograficzny (N, S, E, W): ");
         String wybor = scan.nextLine().toUpperCase();
+        
+        
 
         Lokacje noweMiejsce = null;
         switch (wybor) {

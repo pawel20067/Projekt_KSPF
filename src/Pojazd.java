@@ -7,8 +7,9 @@ public abstract class Pojazd {
 	protected int paliwo;
 	protected int rocznik;
 	protected int zbiornik;
+	protected float spalanie;
 	
-	public Pojazd(String marka, String model, int przebieg, int paliwo, int rocznik, int zbiornik) {
+	public Pojazd(String marka, String model, int przebieg, int paliwo, int rocznik, int zbiornik, float spalanie) {
 		super();
 		this.marka = marka;
 		this.model = model;
@@ -16,9 +17,11 @@ public abstract class Pojazd {
 		this.paliwo=paliwo;
 		this.rocznik=rocznik;
 		this.zbiornik=zbiornik;
+		this.spalanie=spalanie;
 	}
 	
 	public void informacje() {
+		System.out.println("------------------------Statystyki aktualnego samochodu---------------------------");
 		System.out.println(marka + " " + model + " " + rocznik);
 		System.out.println("Przebieg: " + przebieg);
 		System.out.println("Ilość paliwa: " + paliwo + "%");
@@ -31,7 +34,18 @@ public abstract class Pojazd {
 	public void setPrzebieg(int przebieg) {
 		this.przebieg = przebieg;
 	}
+	
+	public int getPaliwo() {
+		return paliwo;
+	}
 
+	public void setPaliwo(int paliwo) {
+		this.paliwo = paliwo;
+	}
+	
+	public void zuzyciePaliwa() {
+		
+	}
 	public void zatankuj() {
 		float cenaBenzyny = 6.71F;
 		int litry = zbiornik*(paliwo/100);
