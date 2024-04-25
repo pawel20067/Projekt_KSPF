@@ -1,5 +1,5 @@
 package paczki;
 
-public abstract class paczka {
-	
+public abstract class Paczka {
+
 }

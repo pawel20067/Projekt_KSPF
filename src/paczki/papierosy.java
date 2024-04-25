@@ -1,5 +1,5 @@
 package paczki;
 
-public class papierosy extends paczka {
+public class Papierosy extends Paczka {
 
 }
