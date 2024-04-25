@@ -1,5 +1,5 @@
 package paczki;
 
-public class Bron {
+public class Bron extends Paczka {
 
 }

@@ -1,5 +1,5 @@
 package paczki;
 
-public class Narkotyk {
+public class Narkotyk extends Paczka {
 
 }
