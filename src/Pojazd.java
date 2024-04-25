@@ -46,12 +46,11 @@ public abstract class Pojazd {
 	public void zuzyciePaliwa() {
 		
 	}
-	public void zatankuj() {
+	/*public void zatankuj() {
 		float cenaBenzyny = 6.71F;
 		int litry = zbiornik*(paliwo/100);
 		litry = zbiornik-litry;
         boolean zatankowanie = true;
-        Scanner scan = new Scanner(System.in);
         
 		while (zatankowanie==true) {
 			System.out.println("Ile paliwa chcesz zatankować: ");
@@ -65,5 +64,5 @@ public abstract class Pojazd {
 				System.out.println("Za dużo zatankuj mniej!!!");
 	        }
 		}
-	}	
+	}*/	
 }
