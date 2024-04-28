@@ -53,12 +53,20 @@ public class Main {
                 + "\n" + "* Właśnie wtedy otrzymuje ofertę pracy, która wymaga od niego jedynie jazdy samochodem. "
                 + "\n" + "* W ten prosty sposób Stanisław staje się kurierem na usługach Katowickiego kartelu. "
                 + "\n" + "* Nie wiadomo jednak, czy zdąży je naprawić swoje błędy, zanim dobiorą się do niego organy ochrony porządku publicznego lub egzekutorzy kartelu."
-                + "");
+                + "\n" + "---------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("");
 
-        while (true) {
-            aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochodPierwszy);
-            samochodPierwszy.informacje();
+        int lvl = 1;
+        boolean pierwszeZlecenie = true;
+
+        while (lvl != 0) {
+            if (pierwszeZlecenie = true) {
+                System.out.println("Musisz udać się do Katowic do zkładu Wulkanizacyjnego pod adres z ulotki która dostałeś od nieznajomego");
+                aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochodPierwszy);
+                if (aktualneMiejsce==swiat[1]) {
+                    System.out.println("Wjezdzasz do zakładu wulkanizacyjnego samochodem");
+                }
+            }
         }
     }
     
