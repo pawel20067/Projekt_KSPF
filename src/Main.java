@@ -13,6 +13,7 @@ public class Main {
         swiat[7] = new Lokacje("Francja: Strasburg");
         swiat[8] = new Lokacje("Hiszpania: Saint-Jean-Pla-de-Corts");
         swiat[9] = new Lokacje("Portugalia: Ayamonte");
+        
         swiat[0].dodajPrzejscie(null, null, null, swiat[1]);
         swiat[1].dodajPrzejscie(null, swiat[2], swiat[0], swiat[4]);
         swiat[2].dodajPrzejscie(swiat[1], swiat[3], null, swiat[5]);
@@ -43,12 +44,12 @@ public class Main {
                 + "\n" + "---------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("");
 
-        int lvl = 1;
+        int etap1 = 1;
         boolean pierwszeZlecenie = true;
         String bohater = "Stanisław: ";
         String szmugler = "Szmugler: ";
 
-        if (lvl != 0) {
+        if (etap1 != 0) {
             if (pierwszeZlecenie) {
                 System.out.println("* Musisz udać się do Katowic do zakładu Wulkanizacyjnego pod adres z ulotki, którą dostałeś od nieznajomego");
                 aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochodPierwszy);
@@ -61,10 +62,23 @@ public class Main {
                     System.out.println(bohater + "Gdzie jaki schowek?");
                     System.out.println(szmugler + "Wyciąć w furgonetce.");
                     System.out.println(bohater + "Co wy mówicie? Jak wyciąć... Nikt nie będzie ciął tej furgonetki, zrozumiano? Włóż, co tam masz na pakę, obok kijów golfowych. Będzie bezpieczne.");
+                    System.out.println(szmugler + "Odbiło Ci co? Wez to.");
+                    System.out.println(bohater + "Co to jest?");
+                    System.out.println(szmugler + "Odbierasz to o każdej porze dnia i nocy, ale nigdzie nie dzwonisz. Gdy dotrzesz na miejsce ktoś Ci puśći SMS-a. Gdy zadzwoni ten numer odbieraj.");
+                    System.out.println(szmugler + "Gdy dojedziesz do hotelu parkujesz furgonetkę. Włóż kluczyki do schowka. Wróć za godzinę. Twoja kasa będzie w schowku razem z kluczykami. Kapujesz?");
+                    System.out.println(bohater + "Rozumiem. A jeśli kotoś ukradnie mi forsę albo auto?");
+                    System.out.println(szmugler + "Nikt nie będzie się wpierdalał. Wszędzie mamy swoich ludzi");
+                    System.out.println(szmugler + "Wyświadcz sobie przysługe Eryk. Nie zaglądaj do tej torby...");
                 }
             }
         }
     }
+    
+    
+    
+    
+    
+    
     
     
     
