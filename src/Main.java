@@ -68,7 +68,7 @@ public class Main {
                     System.out.println(szmugler + "Gdy dojedziesz do hotelu parkujesz furgonetkę. Włóż kluczyki do schowka. Wróć za godzinę. Twoja kasa będzie w schowku razem z kluczykami. Kapujesz?");
                     System.out.println(bohater + "Rozumiem. A jeśli kotoś ukradnie mi forsę albo auto?");
                     System.out.println(szmugler + "Nikt nie będzie się wpierdalał. Wszędzie mamy swoich ludzi");
-                    System.out.println(szmugler + "Wyświadcz sobie przysługe Eryk. Nie zaglądaj do tej torby...");
+                    System.out.println(szmugler + "Wyświadcz sobie przysługe Eryk. Nie zaglądaj do tej torby...");//
                 }
             }
         }
