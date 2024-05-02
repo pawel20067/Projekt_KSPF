@@ -32,7 +32,7 @@ public class Main {
         Pojazd samochodPierwszy = new Samochod("Lincoln", "Navigator", 400000, 80, 1997, 113, 25, "prywatny", 20, 1.42F);
 
         System.out.println("--------------------------------------------------------------PRZEMYTNIK---------------------------------------------------------------------------"
-                + "\n" + "* Wcielasz się w rolę Stanisława Wawrzyniaka."
+                + "\n" + "* Wcielasz się w rolę Eryka Wawrzyniaka."
                 + "\n" + "* To 82-letni mężczyzna, który nie ma grosza przy duszy, jest sam jak palec i grozi mu zajęcie przez bank zadłużonego biznesu. "
                 + "\n" + "* W przeszłości był ogrodnikiem, poświęcił całe życie na chybrydyzację coraz to nowych ras kwiatów, jednak z czasem jego biznes odszedł w niepamięć."
                 + "\n" + "* Postanawia udać się do swojej rodziny, którą zaniedbał przez swoje hobby i pracę."
