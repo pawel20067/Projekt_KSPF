@@ -29,7 +29,9 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         GlownyBohater G1 = new GlownyBohater("Eryk", "Stone", "Polak", 82, 10, 200, 0, 100);
-        Pojazd samochodPierwszy = new Samochod("Lincoln", "Navigator", 400000, 80, 1997, 113, 25, "prywatny", 20, 1.42F);
+        Pojazd samochod1 = new Samochod("Lincoln", "Navigator", 400000, 80, 1997, 113, 25, 20, 1.18F);
+        Pojazd samochod2 = new Samochod("Lincoln", "Mark LT", 20000, 3, 2007, 114, 18, 50, 1.34F);
+
 
         System.out.println("--------------------------------------------------------------PRZEMYTNIK---------------------------------------------------------------------------"
                 + "\n" + "* Wcielasz się w rolę Eryka Wawrzyniaka."
@@ -46,13 +48,13 @@ public class Main {
 
         int etap1 = 1;
         boolean pierwszeZlecenie = true;
-        String bohater = "Stanisław: ";
+        String bohater = "Eryk: ";
         String szmugler = "Szmugler: ";
 
         if (etap1 != 0) {
             if (pierwszeZlecenie) {
-                System.out.println("* Musisz udać się do Katowic do zakładu Wulkanizacyjnego pod adres z ulotki, którą dostałeś od nieznajomego");
-                aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochodPierwszy);
+                System.out.println("* Musisz udać się do Katowic do zakładu Wulkanizacyjnego pod adres z ulotki, którą dostałeś od nieznajomego.");
+                aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochod1);
                 if (aktualneMiejsce == swiat[1]) {
                     System.out.println("* Wjeżdzasz do zakładu wulkanizacyjnego samochodem");
                     System.out.println("");
@@ -68,11 +70,28 @@ public class Main {
                     System.out.println(szmugler + "Gdy dojedziesz do hotelu parkujesz furgonetkę. Włóż kluczyki do schowka. Wróć za godzinę. Twoja kasa będzie w schowku razem z kluczykami. Kapujesz?");
                     System.out.println(bohater + "Rozumiem. A jeśli kotoś ukradnie mi forsę albo auto?");
                     System.out.println(szmugler + "Nikt nie będzie się wpierdalał. Wszędzie mamy swoich ludzi");
-                    System.out.println(szmugler + "Wyświadcz sobie przysługe Eryk. Nie zaglądaj do tej torby...");//
+                    System.out.println(szmugler + "Wyświadcz sobie przysługe Eryk. Nie zaglądaj do tej torby...");
+                    System.out.println("");
+                    System.out.println("* Udaj się z paczką pod hotel w Austri w miejscowości Kleinhaugsdorf");
+
+                    while(aktualneMiejsce!=swiat[5]) {
+                    	aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochod1);
+                    }
+                    if(aktualneMiejsce==swiat[5]) {
+                    	System.out.println("* Dojechałeś do hotelu zostawiasz kluczyki w schowku i wychodzisz na godzinę z samochodu");
+                        String enter = scan.nextLine();
+                    	System.out.println("* Dojechałeś do hotelu zostawiasz kluczyki w schowku i wychodzisz na godzinę z samochodu");
+                    }
+                    	
+                    }
+
+                    
                 }
+
             }
+
         }
-    }
+    
     
     
     
