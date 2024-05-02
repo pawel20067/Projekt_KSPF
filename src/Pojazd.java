@@ -24,7 +24,7 @@ public abstract class Pojazd {
 		System.out.println("------------------------Statystyki aktualnego samochodu---------------------------");
 		System.out.println(marka + " " + model + " " + rocznik);
 		System.out.println("Przebieg: " + przebieg);
-		System.out.println("Ilość paliwa: " + paliwo + "%");
+		System.out.println("Ilość paliwa: " + paliwo + "na " + zbiornik + " litrów");
 		System.out.println("----------------------------------------------------------------------------------");
 	}
 	
@@ -44,9 +44,7 @@ public abstract class Pojazd {
 		this.paliwo = paliwo;
 	}
 	
-	public void zuzyciePaliwa() {
-		
-	}
+
 	/*public void zatankuj() {
 		float cenaBenzyny = 6.71F;
 		int litry = zbiornik*(paliwo/100);
@@ -69,6 +67,11 @@ public abstract class Pojazd {
 	
     public void zwiekszPrzebieg(int dodatkowyPrzebieg) {
         this.przebieg += dodatkowyPrzebieg;
+    }
+    
+    public void zuzyciePaliwa() {
+		float zuzycie = (330/100)*spalanieNa100Km;
+		this.paliwo -= zuzycie;
     }
 
 }
