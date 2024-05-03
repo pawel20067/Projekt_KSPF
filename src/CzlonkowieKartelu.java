@@ -7,6 +7,5 @@ public class CzlonkowieKartelu extends Postac {
 		super(imie, naziwsko, narodowosc, wiek);
 		this.kartel = kartel;
 		this.rola = rola;
-	}//
-
+	}
 }
