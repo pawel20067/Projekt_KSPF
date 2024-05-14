@@ -129,6 +129,8 @@ public class Main {
                     	        System.out.println("Wybierz poprawną odpowiedź");
                     	    }
                     	}
+                       aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochod1, G1);
+
                     	
                     }
                     	
