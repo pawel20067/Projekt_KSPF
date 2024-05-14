@@ -126,7 +126,7 @@ public class Main {
                     	        break; // Opuszczamy pętlę po udzieleniu odpowiedzi "NIE"
                     	    }
                     	    else {
-                    	        System.out.println("Wybierz poprawną odpowiedź");
+                    	        System.out.println("Wybierz poprawną odpowiedź: ");
                     	    }
                     	}
                        aktualneMiejsce = poruszanieSiePoMapie(aktualneMiejsce, scan, samochod1, G1);
